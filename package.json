@@ -20,24 +20,14 @@
     "type": "git",
     "url": "git+https://github.com/teenyicons/teenyicons.git"
   },
-  "keywords": [
-    "icons",
-    "minimal",
-    "svg"
-  ],
+  "keywords": ["icons", "minimal", "svg"],
   "author": "smhmd <contact.simohamed@gmail.com> (https://simohamed.tech)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/teenyicons/teenyicons/issues"
   },
   "homepage": "https://teenyicons.com",
-  "files": [
-    "outline/",
-    "solid/",
-    "teenyicons-sprite.svg",
-    "teenyicons-outline-sprite.svg",
-    "teenyicons-solid-sprite.svg"
-  ],
+  "files": ["outline/", "solid/", "teenyicons-sprite.svg", "teenyicons-outline-sprite.svg", "teenyicons-solid-sprite.svg"],
   "dependencies": {},
   "devDependencies": {
     "np": "7.2.0",
