@@ -10,8 +10,9 @@
     "build": "npm-run-all clean build:* sprite:*",
     "try": "npm run build && npm pack",
     "clean": "rm -rf outline solid teenyicons-sprite.svg teenyicons-outline-sprite.svg teenyicons-solid-sprite.svg package teenyicons-*.tgz",
-    "build:outline": "svgo --config=svgo.yml -f ./src/outline/ -o outline --pretty --indent=2",
-    "build:solid": "svgo --config=svgo.yml -f ./src/solid/ -o solid --pretty --indent=2",
+    "build:outline": "svgo --config=svgo.yml -f ./src/outline/ -o dist/outline --pretty --indent=2",
+    "build:solid": "svgo --config=svgo.yml -f ./src/solid/ -o dist/solid --pretty --indent=2",
+    "build:all": "npm-run-all build:outline build:solid",
     "sprite:all": "svg-sprite --svg-namespace-classnames false --symbol --symbol-dest . --symbol-sprite teenyicons-sprite.svg ./outline/*.svg ./solid/*.svg",
     "sprite:outline": "svg-sprite --svg-namespace-classnames false --symbol --symbol-dest . --symbol-sprite teenyicons-outline-sprite.svg ./outline/*.svg",
     "sprite:solid": "svg-sprite --svg-namespace-classnames false --symbol --symbol-dest . --symbol-sprite teenyicons-solid-sprite.svg ./solid/*.svg"
